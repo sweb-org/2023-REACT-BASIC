@@ -14,7 +14,7 @@ $ git pull origin master
 # 작업내용 제출
 $ git add 파일명
 $ git commit -m "[이름] week-? complete"
-$ git push origin master
+$ git push origin 이름
 ```
 
 `git checkout 이름` 명령어로 브랜치 이동 후,  
