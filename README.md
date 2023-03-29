@@ -10,7 +10,6 @@
 &nbsp;
 
 ## Curriculum
-<!-- :black_square_button: :ballot_box_with_check: -->
 |회차|모임 일시|학습내용|
 |:---:|:---:|:---:|
 |<ul><li>[x] 1회차&nbsp;</li></ul>|3월 22일|React의 작동 방식, 차세대 자바스크립트<br>(let & const, 화살표 함수, 모듈, 클래스, Spread & Rest, 구조분해할당, 배열함수)|
