@@ -13,7 +13,7 @@
 <!-- :black_square_button: :ballot_box_with_check: -->
 |회차|모임 일시|학습내용|
 |:---:|:---:|:---:|
-|<ul><li>[x] 1회차&nbsp;</li></ul>|3월 22일|React의 작동 방식, 차세대 자바스크립트<br>(변수 선언, 화살표 함수, 모듈, 클래스, 스프레드와 나머지 연산자, 구조분해할당, 배열함수)|
+|<ul><li>[x] 1회차&nbsp;</li></ul>|3월 22일|React의 작동 방식, 차세대 자바스크립트<br>(let & const, 화살표 함수, 모듈, 클래스, Spread & Rest, 구조분해할당, 배열함수)|
 |<ul><li>[x] 2회차&nbsp;</li></ul>|3월 29일|React 프로젝트 생성하는 방법, JSX 소개,<br>사용자 지정 컴포넌트, Props를 통해 데이터를 전달하는 방법|
 |<ul><li>[ ] 3회차&nbsp;</li></ul>|4월 5일|과제물 및 퀴즈 수행, 컴포넌트 분할,<br>Children Props를 사용한 컴포지션, 양방향 바인딩, State 끌어올리기|
 |<ul><li>[ ] 4회차&nbsp;</li></ul>|4월 12일|과제물 및 퀴즈 수행, 데이터의 렌더링 목록,<br>State 저장 목록 사용, Key Props의 이해, 조건부 내용 출력|
