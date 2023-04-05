@@ -1,0 +1,77 @@
+● useState 훅이란?
+▶ Hook의 개요
+Hook은 React 버전 16.8부터 React 요소로 새로 추가되었다. Hook을 이용하여 기존 Class 바탕의 코드를 작성할 필요 없이 상태 값과 여러 React의 기능을 사용할 수 있다. 
+const [count, setCount] = useState(0); // 'count'라는 새로운 상태 값을 정의함.
+
+▶Hook의 특징?
+① 선택적 사용
+기존의 코드를 다시 작성할 필요 없이 일부의 컴포넌트들 안에서 Hook을 사용할 수 있음. 하지만 당장 Hook이 필요 없다면 사용할 필요는 없음.
+② 100% 이전 버전과의 호환성 
+Hook은 호환성을 깨뜨리는 변화가 없다. 
+③ 현재 사용 가능 
+Hook은 배포 v16.8.0에서 사용할 수 있다.
+
+▶컴포넌트 사이에서 상태 로직을 재사용하기 어렵다.
+React는 컴포넌트간에 재사용 가능한 로직을 붙이는 방법을 제공하지 않는다. 이전부터 React를 사용해왔다면, render props나 고차 컴포넌트와 같은 패턴을 통해 이러한 문제를 해결하는 방법에 익숙할 것이다. 그러나 이런 패턴의 사용은 컴포넌트의 재구성을 강요하며, 코드의 추적을 어렵게 만든다. React 개발자 도구에서 React 애플리케이션을 본다면, providers, consumers, 고차 컴포넌트, render porps 그리고 다른 추상화에 대한 레이어로 둘러싸인 "래퍼 지옥"을 볼 가능성이 높다. 개발자 도구에서 걸러낼 수 있지만, 이 문제의 요점은 심층적이었다. React는 상태 관련 로직을 공유하기 위해 좀 더 좋은 기초 요소가 필요했다. 
+Hook을 사용하면 컴포넌트로부터 상태 관련 로직을 추상화할 수 있다. 이를 이용해 독립적인 테스트와 재사용이 가능하다. Hook은 계층의 변화 없이 상태 관련 로직을 재사용할 수 있도록 도와준다.이것은 많은 컴포넌트 혹은 커뮤니티 사이에서 Hook을 공유하기 쉽게 만들어준다.
+
+▶ Hook 사용 규칙
+Hook은 그냥 JS함수지만, 2가지 규칙을 준수해야 한다.
+① 최상위(at the top level)에서만 Hook을 호출해야 한다. 반복문, 조건문, 중첩된 함수 내에서 Hook을 실행하면 안된다. 
+② React 함수 컴포넌트 내에서만 Hook을 호출해야 한다. 일반 JS함수에서는 Hook을 호출해서는 안된다. 또한 직접 작성한 custom Hook 내에서만 호출 가능하다. ( import React, { useState } 'react'; )
+
+▶ 언제 Hook을 사용할까?
+함수 컴포넌트를 사용하던 중 state를 추가하고 싶을 때 클래스 컴포넌트로 바꾸곤 했을 것이다. 
+하지만 이제 함수 컴포넌트 안에서 Hook을 이용하여 state를 사용할 수 있다. 
+
+▶ state 변수 선언하기
+클래스를 사용할 때는 constructor안에서 this.state를 { count:0 }로 설정함으로써 count를 0으로 초기화함.
+하지만 ***함수 컴포넌트는 this를 가질 수 없기 때문에*** this.state를 할당하거나 읽을 수 없음!!!
+함수 내에서 const [count, setCount] = useState(0); 를 사용함.
+▣ useState를 호출하는 것은 무엇을 하는 걸까? 
+"state 변수"를 선언할 수 있다. 위에 선언한 변수는 count지만 아무 이름으로 지어도 상관 없다. 
+useState는 클래스 컴포넌트의 this.state가 제공하는 기능과 같다. 일반적으로 일반 변수는 함수가 끝날 때 사라지지만, state 변수는 React에 의해 사라지지 않는다. 
+▣ useState의 인자로 무엇을 넘겨주어야 할까?
+useState() Hook의 인자로 넘겨주는 값은 state의 초기 값이다. 함수 컴포넌트의 state는 클래스와 달리 객체일 필요는 없고, 숫자 타입과 문자 타입을 가질 수 있다. 
+▣ useState는 무엇을 반환할까?
+state 변수, 해당 변수를 갱신할 수 있는 함수 이 두 가지 쌍을 반환한다. 이것이 const [count, setCount] = useState() 라고 쓰는 이유다. 클래스 컴포넌트의 this.state.count 와 this.setState와 유사하다.
+▣ 대괄호의 의미?
+const [count, setCount] = useState(0);
+위 문법은 "배열 구조 분해"라고 한다. count와 setCount 2개의 값을 만든다. useState를 사용하면 count라는 첫번째 값과 setCount라는 두 번째 값을 반환한다. 
+
+===========================================================================================
+● 상태 끌어올리기란 ?
+상위 컴포넌트의 상태 변경 함수 그 자체를 하위 컴포넌트로 전달하고, 이 함수를 하위 컴포넌트가 실행하는 것이다.
+동일한 데이터에 대한 변경사항을 여러 컴포넌트에 반영해야할 필요가 있다. 이때 가장 가까운 공통 조상(컴포넌트)에서 state를 끌어올리는 것을 권장한다. → 단방향 데이터 흐름의 원칙을 벗어나지 않는 해결 방법
+
+단방향 데이터 흐름이라는 원칙에 따라서 하위 컴포넌트는 상위 컴포넌트로 전달 받은 데이터의 형태, 타입이 무엇인지만 알 수 있고 데이터가 state, 하드코딩으로 입력된 내용인지도 알지 못한다.
+그러므로 하위 컴포넌트에서의 어떤 이벤트로 인해 상위 컴포넌트의 상태가 바뀌는 것은 마치 역방향 데이터 흐름으로 들릴 수 있다. 
+상태 끌어올리기 라는 것은 상위 컴포넌트의 상태를 변경하는 함수 그 자체를 하위 컴포넌트로 전달하고, 이 함수를 하위 컴포넌트가 실행한다는 뜻이다. 
+import React, { useState } from "react";
+
+//부모 컴포넌트
+export default function ParentComponent() {
+  const [value, setValue] = useState("날 바꿔줘!");
+
+  const handleChangeValue = () => {
+    setValue("보여줄게 완전히 달라진 값");
+  };
+
+  return (
+    <div>
+      <div>값은 {value} 입니다</div>
+      <ChildComponent handleChangeValue1={handleChangeValue} />
+    </div>
+  );
+}
+
+//자식 컴포넌트
+function ChildComponent({ handleChangeValue1 }) {
+  const handleClick = () => {
+    // 이 버튼을 눌러서 부모의 상태를 바꿀 순 없을까?
+    handleChangeValue1();
+  };
+
+  return <button onClick={handleClick}>값 변경</button>;
+}
+▲ 출처 https://off-dngw.github.io/posts/REACT-4/
