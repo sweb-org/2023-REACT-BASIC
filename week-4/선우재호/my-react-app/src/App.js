@@ -1,14 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Expenses from "./components/Expenses/Expenses";
 import NewExpense from "../../../선우재호/my-react-app/src/components/NewExpense/NewExpense";
 
 const App = () => {
   const addExpenseHandler = (expenseData) => {
-    console.log(expenseData);
+    setExpenses((prevExpense) => [expenseData, ...prevExpense]);
   };
 
-  const expenses = [
+  const DUMMY_EXPENSES = [
     {
       id: "e1",
       title: "Toilet Paper",
@@ -36,6 +36,8 @@ const App = () => {
   //   React.createElement('h2', {}, "Let's get started!"),
   //   React.createElement(Expenses, { items: expenses })
   // );
+
+  const [expenses, setExpenses] = useState(DUMMY_EXPENSES);
 
   return (
     <div>
