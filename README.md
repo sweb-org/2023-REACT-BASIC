@@ -19,7 +19,7 @@
 |<ul><li>[x] 5회차&nbsp;</li></ul>|4월 26일|과제물 및 퀴즈 수행, 동적 인라인 스타일링,<br>CSS 클래스 설정 스타일링, Styled Components와 동적 Props, 미디어쿼리, CSS 모듈|
 |<ul><li>[x] 6회차&nbsp;</li></ul>|5월 3일|과제물 및 퀴즈 수행, 리액트 오류 메시지 이해,<br>코드 흐름 및 경고 분석, 중단점(Breakpoint) 작업, 리액트 Developer Tools|
 |<ul><li>[x] 7회차&nbsp;</li></ul>|5월 10일|과제물 및 퀴즈 수행, 검증 추가 및 로직 재설정,<br>Error Modal 제작, 오류 State 관리|
-|<ul><li>[ ] 8회차&nbsp;</li></ul>|5월 17일|과제물 및 퀴즈 수행, JSX 제한사항 및 해결 방법, 컴포넌트 Wrapper 제작, <br>Fragment, Portals, Refs, 제어되는 컴포넌트와 제어되지 않는 컴포넌트|
+|<ul><li>[x] 8회차&nbsp;</li></ul>|5월 17일|과제물 및 퀴즈 수행, JSX 제한사항 및 해결 방법, 컴포넌트 Wrapper 제작, <br>Fragment, Portals, Refs, 제어되는 컴포넌트와 제어되지 않는 컴포넌트|
 
 &nbsp;
 
