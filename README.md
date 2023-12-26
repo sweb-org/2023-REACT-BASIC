@@ -6,6 +6,7 @@
 ### Table of Contents
 > - [Curriculum](#curriculum)
 > - [How To Use](#how-to-use)
+> - [Members](#members)
 
 &nbsp;
 
@@ -43,7 +44,7 @@ $ git push origin 이름
 
 &nbsp;
 
-## Member
+## Members
 |[![Wontory](https://avatars.githubusercontent.com/u/94912717)](http://github.com/wontory)|[![JaeguJaegu](https://avatars.githubusercontent.com/u/118053865)](http://github.com/SunwooJaeho)|[![yunjusseongg](https://avatars.githubusercontent.com/u/126853299)](http://github.com/yunjusseongg)|[![Boongranii](https://avatars.githubusercontent.com/u/102457140)](http://github.com/bbjbc)|
 |:---:|:---:|:---:|:---:|
 |**👑 [조성원](http://github.com/wontory)**|**💎 [선우재호](http://github.com/SunwooJaeho)**|**💎 [윤주성](http://github.com/yunjusseongg)**|**💎 [조병찬](http://github.com/bbjbc)**|
