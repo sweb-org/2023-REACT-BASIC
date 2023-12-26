@@ -40,3 +40,11 @@ $ git push origin 이름
 `git checkout 이름` 명령어로 브랜치 이동 후,  
 주차에 맞는 폴더에 들어가 본인의 이름으로 폴더를 만듭니다.
 > **주의** 모든 작업은 해당 폴더 내에서 이루어집니다. (충돌 방지)
+
+&nbsp;
+
+## Member
+|[![Wontory](https://avatars.githubusercontent.com/u/94912717)](http://github.com/wontory)|[![JaeguJaegu](https://avatars.githubusercontent.com/u/118053865)](http://github.com/SunwooJaeho)|[![yunjusseongg](https://avatars.githubusercontent.com/u/126853299)](http://github.com/yunjusseongg)|[![Boongranii](https://avatars.githubusercontent.com/u/102457140)](http://github.com/bbjbc)|
+|:---:|:---:|:---:|:---:|
+|**👑 [조성원](http://github.com/wontory)**|**💎 [선우재호](http://github.com/SunwooJaeho)**|**💎 [윤주성](http://github.com/yunjusseongg)**|**💎 [조병찬](http://github.com/bbjbc)**|
+|컴퓨터공학부 19|컴퓨터공학부 19|컴퓨터공학부 19|컴퓨터공학부 19|
